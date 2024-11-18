@@ -1,4 +1,5 @@
-import { StyleSheet, View, Text, Image, Touchable, TouchableOpacity } from "react-native"
+import React from "react";
+import { StyleSheet, View, Text, Image } from "react-native"
 import { Icons } from "./Icons.jsx";
 // https://usbrandcolors.com/spotify-colors/
 // https://developer.spotify.com/documentation/design 
@@ -9,19 +10,16 @@ const albumArt = require('../../assets/img/liniker-caju-tour.jpg');
 export const HomePlay = () => {
     return (
         <>
-            <View>
+            <View style={styles.container}>
                 <View style={styles.albumContainer}>
                     <Image source={albumArt}
                         style={styles.albumArt} />
                 </View>
-
-                <View style={styles.container}>
-                    <View style={styles.header}>
-                        <Text style={styles.musicTitle}>Caju</Text>
-                        <Text style={styles.artistName}>Liniker</Text>
-                    </View>
-                    <Icons />
+                <View style={styles.header}>
+                    <Text style={styles.musicTitle}>Caju</Text>
+                    <Text style={styles.artistName}>Liniker</Text>
                 </View>
+                <Icons />
             </View>
         </>
     )
@@ -31,13 +29,12 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: "#121212",
-        textDecorationColor: "#ccc",
-        justifyContent: "space-between",
-        alignItems: "center",
-        paddinngVertical: 50,
     },
     header: {
-        alignItems: "center",
+        alignItems: 'flex-start',
+        justifyContent: 'flex-start',
+        marginLeft: 20,
+        marginBottom: 10,
     },
     musicTitle: {
         color: "white",
@@ -58,8 +55,10 @@ const styles = StyleSheet.create({
     },
     albumArt: {
         flex: 1,
-        aspectRatio: 1,
+        width: '100%',
+        height: '75%',
         resizeMode: 'cover',
         borderRadius: 10,
-    }
-})
+        marginBottom: 180,
+    },
+});

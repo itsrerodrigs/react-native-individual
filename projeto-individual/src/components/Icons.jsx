@@ -1,4 +1,4 @@
-import { StyleSheet, TouchableOpacity } from "react-native";
+import { View, Image, StyleSheet, TouchableOpacity } from "react-native";
 
 const connectIcon = require('../../assets/icons/Connect.png');
 const nextIcon = require('../../assets/icons/Next.png');
@@ -11,7 +11,7 @@ const shareIcon = require('../../assets/icons/Share.png');
 
 export const Icons = () => {
     return (
-        <>
+        <View>
             <View style={styles.controlsContainer}>
                 <TouchableOpacity>
                     <Image source={shuffleIcon} style={styles.iconSmall} />
@@ -46,7 +46,7 @@ export const Icons = () => {
                 </TouchableOpacity>
             </View>
 
-        </>
+        </View>
     );
 };
 
