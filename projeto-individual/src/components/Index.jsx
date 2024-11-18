@@ -21,9 +21,10 @@ export const HomePlay = () => {
         <>
             <View style={styles.container}>
                 <View style={styles.header}>
-                    <Text style={styles.headerTitle}>Caju</Text>
+
                 </View>
                 <View style={styles.albumContainer}>
+                    <Text style={styles.headerTitle}>Caju</Text>
                     <Image source={albumArt}
                         style={styles.albumArt} />
                 </View>
@@ -88,7 +89,8 @@ const styles = StyleSheet.create({
         alignItems: 'flex-start',
         justifyContent: 'flex-start',
         marginLeft: 20,
-        marginBottom: 10,
+        marginTop: -110,
+
     },
     musicTitle: {
         color: "white",
@@ -103,33 +105,33 @@ const styles = StyleSheet.create({
         textAlign: 'left',
     },
     albumContainer: {
-        flex: 3,
+        flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
     },
     albumArt: {
-        flex: 1,
         width: '100%',
-        height: '75%',
+        height: '80%',
         resizeMode: 'cover',
         borderRadius: 10,
-        marginBottom: 180,
+        marginTop: -160,
     },
     controlsContainer: {
         flexDirection: 'row',
         justifyContent: 'space-around',
         alignItems: 'center',
-        flex: 0.1,
+        flex: 0.12,
         alignSelf: 'stretch',
-        marginTop: 20,
+        marginTop: 10,
     },
     secondContainer: {
         flexDirection: 'row',
         alignItems: 'center',
-        flex: 0.08,
+        flex: 0.09,
         alignSelf: 'stretch',
         justifyContent: 'space-between',
-        marginBottom: '5%',
+        marginBottom: 20,
+        paddingHorizontal: 20,
     },
     progressBar: {
         flex: 1,
@@ -138,17 +140,17 @@ const styles = StyleSheet.create({
     },
     iconSmall: {
         aspectRatio: 1,
-        height: '60%',
+        height: 20,
         resizeMode: 'contain',
     },
     iconMedium: {
         aspectRatio: 1,
-        height: '70%',
+        height: 40,
         resizeMode: 'contain',
     },
     iconLarge: {
         aspectRatio: 1,
-        height: '90%',
+        height: 50,
         resizeMode: 'contain',
     },
 });
