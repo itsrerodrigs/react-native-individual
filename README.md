@@ -33,5 +33,5 @@ Certifique-se de que você tenha o [Node.js](https://nodejs.org/) instalado na s
 
 ### Imagem da Aplicação
 
-![Realidade imagem aplicação](https://imgur.com/lmyzeNF.jpg)
+![Realidade imagem aplicação](https://imgur.com/KWlhFIL.jpg)
 
