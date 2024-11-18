@@ -29,9 +29,9 @@ Certifique-se de que você tenha o [Node.js](https://nodejs.org/) instalado na s
    git clone https://github.com/seu-usuario/homeplay.git
 
 ## Expectativa vs Realidade
-![Expectativa tela Spotify](https://imgur.com/kf6g7eA)
+![Expectativa tela Spotify](https://imgur.com/kf6g7eA.jpg)
 
 ### Imagem da Aplicação
 
-![Realidade imagem aplicação](https://imgur.com/lmyzeNF)
+![Realidade imagem aplicação](https://imgur.com/lmyzeNF.jpg)
 
